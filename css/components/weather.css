@@ -1,0 +1,17 @@
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: 700;
+  font-size: 20px;
+  text-shadow: var(--shadow);
+  color: white;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+#weather > span {
+  display: block;
+  margin-bottom: 3px;
+}

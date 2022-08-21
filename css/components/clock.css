@@ -1,0 +1,7 @@
+#clock {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 130px;
+  color: white;
+  text-shadow: var(--shadow);
+}

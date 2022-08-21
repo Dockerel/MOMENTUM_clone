@@ -1,0 +1,5 @@
+:root {
+  --main-border: 5px solid rgba(255, 255, 255, 0.645);
+  --light-white: rgba(255, 255, 255, 0.645);
+  --shadow: -3px 0 #000, 0 3px #000, 3px 0 #000, 0 -3px #000;
+}

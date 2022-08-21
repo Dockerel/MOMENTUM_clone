@@ -1,0 +1,21 @@
+@import "reset.css";
+@import "var.css";
+
+/* components */
+@import "components/bgImage.css";
+@import "components/clock.css";
+@import "components/login.css";
+@import "components/todoform.css";
+@import "components/quote.css";
+@import "components/weather.css";
+
+.hidden {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
