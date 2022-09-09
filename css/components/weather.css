@@ -4,7 +4,7 @@
   align-items: flex-end;
   font-family: 700;
   font-size: 20px;
-  text-shadow: var(--shadow);
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
   color: white;
   position: absolute;
   top: 3%;

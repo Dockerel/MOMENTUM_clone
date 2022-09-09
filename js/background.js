@@ -1,7 +1,23 @@
-const images = ["0.jpg", "1.jpg", "2.jpg", "3.jpeg"];
+const apikey = "563492ad6f9170000100000121f47c2fedc341499c55a539cd535b84";
 
-const chosenImage = images[Math.floor(Math.random() * images.length)];
+let page_num = Math.floor(Math.random() * 10);
 
-bgImage_src = `img/${chosenImage}`;
+async function CuratedPhotos(page_num) {
+  const data = await fetch(
+    `https://api.pexels.com/v1/curated?page=${page_num}`,
+    {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        Authorization: apikey,
+      },
+    }
+  );
+  const response = await data.json();
+  const photos = response.photos;
+  const randomPhoto =
+    photos[Math.floor(Math.random() * photos.length)].src.landscape;
 
-document.body.style.backgroundImage = `url(${bgImage_src})`;
+  document.body.style.backgroundImage = `url(${randomPhoto})`;
+}
+CuratedPhotos(page_num);

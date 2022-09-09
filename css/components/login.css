@@ -17,7 +17,8 @@
   font-size: 30px;
   text-align: center;
   color: white;
-  text-shadow: var(--shadow);
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+  transition: border-bottom 1s ease-in-out;
 }
 
 input:focus {

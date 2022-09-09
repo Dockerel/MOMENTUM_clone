@@ -10,10 +10,15 @@
   width: 100%;
   text-align: center;
   color: white;
-  text-shadow: var(--shadow);
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
   margin-top: 20px;
   margin-bottom: 30px;
   padding-bottom: 20px;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+#todo-form > input:focus {
+  border-bottom: 5px solid white;
 }
 
 #todo-form > input::placeholder {
@@ -24,7 +29,7 @@
   font-size: 20px;
   font-weight: 400;
   color: white;
-  text-shadow: var(--shadow);
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
   display: flex;
   justify-content: flex-start;
   margin-right: 30px;

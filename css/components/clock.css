@@ -4,4 +4,9 @@
   font-size: 130px;
   color: white;
   text-shadow: var(--shadow);
+  transition: color 0.5s ease-in-out;
+}
+
+#clock:hover {
+  color: var(--light-white);
 }
